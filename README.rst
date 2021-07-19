@@ -1,8 +1,8 @@
-=========================
-SINP Organisms for Django
-=========================
+=======
+AppName
+=======
 
-`DjangoSinpOrganisms <https://github.com/dbchiro/DjangoSinpOrganisms>`_ is a simple `Django <https://www.djangoproject.com/>`_ reusable app to manage `French SINP Organisms <http://standards-sinp.mnhn.fr/referentiel-des-organismes/>`_, respecting standard.
+Lorem ipsum
 
 
 Detailed documentation is in the "docs" directory.
@@ -14,7 +14,7 @@ Quick start
 
 .. code-block:: bash
 
-    $ pip install -U dj-sinp-organisms
+    $ pip install -U app-name
 
 
 
@@ -41,14 +41,13 @@ Quick start
         path('admin/', admin.site.urls),
         path('api-auth/', include('rest_framework.urls')),
         (...),
-        path('api/v1/', include('sinp_nomenclatures.urls')),
-        path('api/v1/', include('sinp_organisms.urls')),
+        path('api/v1/', include('app_name.urls')),
         (...),
     ]
 
-4. Run ``python manage.py migrate`` to create the polls models.
+1. Run ``python manage.py migrate`` to create the polls models.
 
-5. Start the development server and visit http://127.0.0.1:8000/admin/
+2. Start the development server and visit http://127.0.0.1:8000/admin/
    to create an organism (you'll need the Admin app enabled).
 
-6. Visit http://127.0.0.1:8000/api/v1/organisms to view organisms API.
+3. Visit http://127.0.0.1:8000/api/v1/... to view organisms API.
