@@ -1,8 +1,8 @@
-=======
-AppName
-=======
+=============================
+My Awesome Project
+=============================
 
-Lorem ipsum
+Behold My Awesome Project!
 
 
 Detailed documentation is in the "docs" directory.
@@ -27,13 +27,12 @@ Quick start
         'django.contrib.auth',
         (...),
         'rest_framework',
-        'sinp_nomenclatures',
-        'sinp_organisms',
+        'my_awesome_project',
         (...),
     )
 
 
-3. Configure ``urls.py``:
+1. Configure ``urls.py``:
 
 .. code-block:: python
 
@@ -41,7 +40,7 @@ Quick start
         path('admin/', admin.site.urls),
         path('api-auth/', include('rest_framework.urls')),
         (...),
-        path('api/v1/', include('app_name.urls')),
+        path('api/v1/', include('my_awesome_project.urls')),
         (...),
     ]
 
